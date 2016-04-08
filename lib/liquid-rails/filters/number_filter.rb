@@ -10,12 +10,12 @@ module Liquid
                 :number_to_human_size,
                 :number_to_human,
 
-                to: :h
+                to: :view
 
       private
 
-        def h
-          @h ||= @context.registers[:view]
+        def view
+          @view ||= @context.registers[:view]
         end
     end
   end
